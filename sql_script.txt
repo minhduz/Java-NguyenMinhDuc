@@ -1,0 +1,41 @@
+use java;
+
+create table user(
+userID int not null primary key,
+username nvarchar(50),
+password nvarchar(50),
+confirmPassword nvarchar(50),
+fullname nvarchar(100),
+email nvarchar(100),
+phone nvarchar(20),
+status bit
+);
+
+DELIMITER //
+create procedure proc_insertUser(in userID int, in username nvarchar(50), in password nvarchar(50), in confirmPassword nvarchar(50), in fullname nvarchar(100), in email nvarchar(50), in phone nvarchar(50), in status bit)
+begin
+	insert into user values(userID,username,password,confirmPassword,fullname,email,phone,status);
+end //
+DELIMITER ;
+
+DELIMITER //
+create procedure proc_updateUser(in UID int, in uName nvarchar(50), in uPassword nvarchar(50), in uConfirmPassword nvarchar(50), in uFullname nvarchar(100), in uEmail nvarchar(50), in uPhone nvarchar(50), in uStatus bit)
+begin
+	update user
+    set username=uName,password=uPassword,confirmPassword=uConfirmPassword,fullname=uFullname,email=uEmail,phone=uPhone,status=uStatus
+	where userID=UID;
+end //
+DELIMITER ;
+
+DELIMITER //
+create procedure proc_deleteUser(in UID int)
+begin
+	delete from user where userID=UID;
+end //
+DELIMITER ;
+
+
+
+
+truncate table user;
+select * from user;
