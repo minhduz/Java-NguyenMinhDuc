@@ -331,8 +331,7 @@ public class ProductManagement extends javax.swing.JFrame {
         SortByCatalogBtn.setBackground(new java.awt.Color(60, 42, 29));
         SortByCatalogBtn.setFont(new java.awt.Font("Algerian", 0, 14)); // NOI18N
         SortByCatalogBtn.setForeground(new java.awt.Color(255, 255, 255));
-        SortByCatalogBtn.setText("Sort By Catalog");
-        SortByCatalogBtn.setActionCommand("Sort By Catalog");
+        SortByCatalogBtn.setText("Sort By Price");
         SortByCatalogBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 SortByCatalogBtnActionPerformed(evt);

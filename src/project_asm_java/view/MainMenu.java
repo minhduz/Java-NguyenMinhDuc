@@ -29,7 +29,6 @@ public class MainMenu extends javax.swing.JFrame {
         catalogBtn = new javax.swing.JButton();
         userLabel = new javax.swing.JLabel();
         productBtn = new javax.swing.JButton();
-        tableBtn = new javax.swing.JButton();
         userBtn = new javax.swing.JButton();
         logoutBtn = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -63,16 +62,6 @@ public class MainMenu extends javax.swing.JFrame {
         productBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 productBtnActionPerformed(evt);
-            }
-        });
-
-        tableBtn.setBackground(new java.awt.Color(60, 42, 29));
-        tableBtn.setFont(new java.awt.Font("Algerian", 0, 14)); // NOI18N
-        tableBtn.setForeground(new java.awt.Color(255, 255, 255));
-        tableBtn.setText("Table Management");
-        tableBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                tableBtnActionPerformed(evt);
             }
         });
 
@@ -118,7 +107,6 @@ public class MainMenu extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(productBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(catalogBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(tableBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(userBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap(107, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -148,13 +136,11 @@ public class MainMenu extends javax.swing.JFrame {
                         .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(catalogBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(productBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(tableBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(userBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(57, 57, 57)
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -194,10 +180,6 @@ public class MainMenu extends javax.swing.JFrame {
         userManagement.show();
         dispose();
     }//GEN-LAST:event_userBtnActionPerformed
-
-    private void tableBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tableBtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tableBtnActionPerformed
 
     private void productBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_productBtnActionPerformed
         ProductManagement productManagement = new ProductManagement();
@@ -254,7 +236,6 @@ public class MainMenu extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JButton logoutBtn;
     private javax.swing.JButton productBtn;
-    private javax.swing.JButton tableBtn;
     private javax.swing.JButton userBtn;
     private javax.swing.JLabel userLabel;
     // End of variables declaration//GEN-END:variables

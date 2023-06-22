@@ -24,9 +24,11 @@ public class UserImp implements IUser<User,Integer> {
         List<User> listUser = readFromFile();
         List<User> listUserSearchByNameOrFullName = new ArrayList<>();
         for (User user:listUser) {
-            if(user.getUserName().contains(name)||user.getUserFullName().trim().toLowerCase().contains(name.trim().toLowerCase())){
-                listUserSearchByNameOrFullName.add(user);
-            }
+            if(user.getUserName()!=null && user.getUserFullName()!=null){
+                if(user.getUserName().contains(name) || user.getUserFullName().trim().toLowerCase().contains(name.trim().toLowerCase())){
+                    listUserSearchByNameOrFullName.add(user);
+                }
+            }          
         }
         return listUserSearchByNameOrFullName;
     }
